@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:linked_redesign/splash_screen.dart';
+import 'package:linked_redesign/src/ui/home_screen.dart';
+import 'package:linked_redesign/src/ui/splash_screen.dart';
 
 const String routeInitial = "splash";
+const String homePage = "homePage";
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case routeInitial:
-        materialRoute(SplashScreen());
+        return materialRoute(SplashScreen());
+        break;
+      case homePage:
+        return materialRoute(HomeScreen());
         break;
       default:
         return MaterialPageRoute(

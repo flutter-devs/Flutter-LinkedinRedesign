@@ -17,4 +17,7 @@ class AppColors {
       900: Color(0xFF0D47A1),
     },
   );
+  static const Color linkedinBlue = Color(0xff0073B0);
+  static const Color linkedinLightGray = Color(0xffE0EAF0);
+  static const Color linkedinDarkGray =  Color(0xffC4C4C4);
 }
