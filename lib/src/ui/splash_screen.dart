@@ -25,7 +25,7 @@ class SplashState extends State<SplashScreen> with TickerProviderStateMixin {
   }
 
   void navigationPage() {
-    Navigator.of(context).pushNamed(homePage);
+    Navigator.of(context).pushReplacementNamed(homePage);
   }
 
   @override

@@ -20,4 +20,5 @@ class AppColors {
   static const Color linkedinBlue = Color(0xff0073B0);
   static const Color linkedinLightGray = Color(0xffE0EAF0);
   static const Color linkedinDarkGray =  Color(0xffC4C4C4);
+  static const Color linkedinBlack =  Color(0xff000000);
 }

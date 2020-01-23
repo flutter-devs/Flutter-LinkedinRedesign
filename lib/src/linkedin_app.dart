@@ -34,7 +34,11 @@ class _LinkedinAppState extends State<LinkedinApp> {
       onGenerateRoute: Router.generateRoute,
       theme: ThemeData(
         primarySwatch: AppColors.white,
-      ),
+          appBarTheme: AppBarTheme(
+            textTheme:
+                TextTheme(title: TextStyle(color: AppColors.linkedinBlue)),
+          ),
+          iconTheme: IconThemeData(color: AppColors.linkedinBlue)),
       home: SplashScreen(),
     );
   }
