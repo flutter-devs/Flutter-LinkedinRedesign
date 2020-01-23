@@ -81,6 +81,12 @@ class _HomeScreenState extends State<HomeScreen> {
           currentIndex: value,
           onTap: (index) {
             baseStateBloc.changeStateWithoutValueProvided(index);
+
+            baseStateBloc.changeState(state: (value) {
+              //do somthing with value
+
+              return value;
+            });
           },
         ),
       );
