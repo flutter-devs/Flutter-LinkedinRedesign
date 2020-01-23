@@ -32,6 +32,7 @@ class _LinkedinAppState extends State<LinkedinApp> {
     return MaterialApp(
       title: 'Flutter Demo',
       onGenerateRoute: Router.generateRoute,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: AppColors.white,
           appBarTheme: AppBarTheme(
