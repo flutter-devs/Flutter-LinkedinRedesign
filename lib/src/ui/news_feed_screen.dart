@@ -34,17 +34,17 @@ class _NewsFeedScreenState extends State<NewsFeedScreen> {
     return Scaffold(
       backgroundColor: AppColors.linkedinLightGray,
       appBar: AppBar(
-        title: Text("News"),
+        title: Text("News",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600),),
         elevation: 0,
         centerTitle: false,
         actions: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Icon(Icons.add_comment),
+            child: Icon(Icons.add_comment,color: AppColors.linkedinBlue,),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Icon(Icons.search),
+            child: Icon(Icons.search,color: AppColors.linkedinBlue,),
           ),
         ],
       ),
@@ -93,8 +93,12 @@ class NewFeedCard extends StatelessWidget {
                   color: AppColors.linkedinBlack, fontWeight: FontWeight.w500),
             ),
             leading: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.network(newsFeedModel.avatarUrl),
+              borderRadius: BorderRadius.circular(8),
+              child: Image.network(
+                newsFeedModel.avatarUrl,
+                height: 40,
+                width: 40,
+              ),
             ),
             subtitle: Text(
               newsFeedModel.designation,
