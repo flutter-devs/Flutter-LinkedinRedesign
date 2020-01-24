@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
             NewsFeedScreen(),
             JobsScreen(),
             MessagesScreen(),
-            NotificationScreen(),
+            NotificationsScreen(),
             ProfileScreen(),
           ],
           index: baseStateBloc.value,
